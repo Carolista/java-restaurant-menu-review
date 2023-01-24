@@ -27,24 +27,21 @@ public class Restaurant {
         System.out.println(menu);
 
         // TODO: Print just one menu item
-//        System.out.println(item1);
+        System.out.println(item1);
 
         // TODO: Remove an item and reprint menu
         menu.removeItem(item4);
         System.out.println(menu);
 
-        // Test equals method
+        // TODO: Test equals method
         System.out.println(item1.equals(item2));
 
 
         // BONUS MISSION
 
         // TODO: Try to add a duplicate
-
         MenuItem item6 = new MenuItem("Garlic Breadsticks", "Hot, garlicky carbs FTW", 4.59, "appetizer");
         menu.addItem(item6);
-//        System.out.println(item5 == item6);
-//        System.out.println(item5.equals(item6));
         System.out.println(menu);
 
     }

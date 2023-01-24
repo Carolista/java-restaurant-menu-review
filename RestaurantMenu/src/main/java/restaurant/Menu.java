@@ -22,26 +22,25 @@ public class Menu {
         StringBuilder appetizers = new StringBuilder();
         for (MenuItem item : menuItems) {
             if (item.getCategory().equals("appetizer")) {
-                appetizers.append("\n" + item.toString());
+                appetizers.append("\n" + item.toString() + "\n");
             }
         }
         StringBuilder mainCourses = new StringBuilder();
         for (MenuItem item : menuItems) {
             if (item.getCategory().equals("main course")) {
-                mainCourses.append("\n" + item.toString());
+                mainCourses.append("\n" + item.toString() + "\n");
             }
         }
         StringBuilder desserts = new StringBuilder();
         for (MenuItem item : menuItems) {
             if (item.getCategory().equals("dessert")) {
-                desserts.append("\n" + item.toString());
+                desserts.append("\n" + item.toString() + "\n");
             }
         }
-        return "TONY'S PIZZA MENU\n" +
-        "\nAPPETIZERS\n" + appetizers.toString() + "\n" +
-        "\nMAIN COURSES\n" + mainCourses.toString() + "\n" +
-        "\nDESSERTS\n" + desserts.toString() + "\n";
-
+        return "\nTONY'S PIZZA MENU\n" +
+        "APPETIZERS" + appetizers.toString() + "\n" +
+        "MAIN COURSES" + mainCourses.toString() + "\n" +
+        "DESSERTS" + desserts.toString() + "\n";
     }
 
     // TODO: Define addItem()
