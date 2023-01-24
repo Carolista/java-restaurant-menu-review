@@ -17,7 +17,7 @@ public class MenuItem {
         this.price = price;
         this.category = category;
         this.dateAdded = LocalDate.now();
-        // Use line below instead of line above to test isNew() returning true
+        // Use line below instead of line above to test isNew() returning false
         // this.dateAdded = LocalDate.parse("2022-06-12");
     }
 
@@ -96,7 +96,7 @@ public class MenuItem {
         LocalDate today = LocalDate.now();
         double daysBetween = dateAdded.until(today, ChronoUnit.DAYS);
         System.out.println(daysBetween + " days since " + name + " was added");
-        return daysBetween > 90;
+        return daysBetween < 90;
     }
 
     /*
